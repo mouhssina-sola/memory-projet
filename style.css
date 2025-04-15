@@ -1,0 +1,107 @@
+
+html, body {
+    font-family: poppins;
+    background: linear-gradient(#A7C2E4, #DEA7A7, #DED8A7);
+    height: 100%;
+    margin: 0;            
+    padding: 0;
+    background-attachment: fixed;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.lineFirst {
+    margin-top: 3vh;
+}
+
+hr {
+    height: 1.5px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vh;
+}
+
+.navAccueil {
+    background-color: #746FA1;
+    padding: 1vh; 
+    border-radius: 0.4vh;
+    width: 20vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: #01252A;
+    color: white;
+    padding: 2vh;
+    border: 1.5px solid white; 
+}
+
+.mainAccueil, .mainInscription{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.imageAccueil{
+width: 200px;
+}
+
+span, a{
+    font-weight: bolder;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.btnAnnuler{
+    background-color: darkred;
+    color: white;
+    font-size: larger;
+}
+
+.btnInscription{
+    background-color: darkgreen;
+    color: white;
+    font-size: larger;
+}
+
+fieldset {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 7px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.btnForm {
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                 
+    margin-top: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
