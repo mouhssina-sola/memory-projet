@@ -32,9 +32,9 @@
                     <div class="form-row">
                         <label for="nom">Nom d'utisateur : </label>
                         <div>
-                            <div class="inputImg">
+                            <div class="inputEtCheck">
                                 <input type="text" name="nomId" id="nomId" class="inputForm" placeholder="3 caractère minimum" autofocus title="Renseignez un nom d'utilisateur" required pattern="[a-zA-Z0-9_-]{3,15}">
-                                <img src="check.svg" class="imgCheck">
+                                <img src="error.svg" class="imgCheck" id="imgCheckId" alt="pastille-verte-valider">
                             </div>
                             <p id="msgId">Choississez un pseudo avec minimum 3 caractères</p>
                         </div>
@@ -43,7 +43,10 @@
                     <div>
                         <label for="prenom">Entrez votre email : </label>
                         <div>
-                            <input type="email" name="email" id="email" class="inputForm" placeholder="Votre email" autofocus title="Votre adresse mail">
+                            <div class="inputEtCheck">
+                                <input type="email" name="email" id="email" class="inputForm" placeholder="Votre email" autofocus title="Votre adresse mail">
+                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                            </div>
                             <p id="msgMail">veuillez saisir une adresse mail valide</p>
                         </div>
                     </div>
@@ -51,7 +54,10 @@
                     <div>
                         <label for="mdp">Entrez un mot de passe : </label>
                         <div>
-                            <input type="password" name="password" id="password" class="inputForm" placeholder="Votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <div class="inputEtCheck">
+                                <input type="password" name="password" id="password" class="inputForm" placeholder="Votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                            </div>
                             <p id="msgMdp">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum</p>
                             <!-- les jauges du mot de passe -->
                             <div class="jauges">
@@ -74,17 +80,19 @@
                     <div>
                         <label for="mdp">Verifiez votre mot de passe : </label>
                         <div>
-                            <input type="password" name="password" id="passwordVerified" class="inputForm" placeholder="Confirmer votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <div class="inputEtCheck">
+                                <input type="password" name="password" id="passwordVerified" class="inputForm" placeholder="Confirmer votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                            </div>
                             <p id="msgValidMdp">votre mot de passe ne correspond pas</p>
                         </div>
                     </div>
+                    <br>
+                    <div class="btnForm">
+                        <input type="reset" value="Effacer" class="btnAnnuler"> 
+                        <input type="submit" value="S'inscrire" class="btnInscription">
+                    </div>
                 </form>
-                <br>
-                <div class="btnForm">
-                    <input type="reset" value="Annuler" class="btnAnnuler"> 
-                    <input type="submit" value="S'inscrire" class="btnInscription">
-                </div>
-                
             </main>
         </div>
     </body>

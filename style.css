@@ -131,6 +131,7 @@ form {
 
 #msgId, #msgValidMdp, #msgMail{
     color: red;
+    visibility: hidden;
 }
 
 #msgMdp {
@@ -173,15 +174,16 @@ form {
     margin-left: 2vh;
 }
 
-.inputImg {
+.inputEtCheck{
     display: flex;
     flex-direction: row;
 }
 
 .imgCheck{
-    width: 25px;
+    width: 23px;
     margin-left: 5px;
     margin-top: 10px;
+    visibility: hidden
 }
 
 /* -------------- */
