@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEU-MEMORY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- lien google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +13,14 @@
 </head>
 <body>
     <header>
-        <hr class="lineFirst">
+        <hr>
         <h1>JEU MEMORY - Accueil</h1> 
         <hr>
     </header>
 
     <br>
 
-    <nav>
+    <nav class="container-fluid">
         <div class="navAccueil"><a href="index.html">Accueil</a></div>
         <div class="navAccueil"><a href="inscription.html">S'inscrire</a></div>
         <div class="navAccueil"><a href="connexion.html">Se connecter</a></div>
@@ -28,36 +29,37 @@
     </nav>
 
     <br>
-
-    <main class="mainAccueil">
-        <p>
-            Bienvenue sur le site du Memory de l'ENI. <br>
-            Venez jouer avec nous et faites le meilleur score possible
-        </p>
-
-        <h3>Règle du jeu</h3>
-
-        <ul>
-            <li>
-                Retourner deux carte. Si les images sont identiques, le jeu laisse les cartes visible
-            </li>
-            <li>
-                Si les images sont différentes, les cartes se retournent faces cachées là où elle étaient.
-            </li>
-            <li>
-                La partie est terminée lorsque toutes les cartes ont été assemblées par paires
-            </li>
-            <br>
-            <img src="memory-legume/memory_detail.png" class="imageAccueil" alt="exemple-du-jeu-réussi">
-
+    <div class="container-fluid">
+        <main class="mainAccueil">
             <p>
-                Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire.<br>
-                Le jeu garde les <span> meilleurs scores.</span><br>
-                Si vous voulez relancer une partie cliquez <span> barre d'espce.</span>
+                Bienvenue sur le site du Memory de l'ENI. <br>
+                Venez jouer avec nous et faites le meilleur score possible
             </p>
 
-        </ul>
-    </main>
+            <h4>Règle du jeu</h4>
+
+            <ul>
+                <li>
+                    Retourner deux carte. Si les images sont identiques, le jeu laisse les cartes visible
+                </li>
+                <li>
+                    Si les images sont différentes, les cartes se retournent faces cachées là où elle étaient.
+                </li>
+                <li>
+                    La partie est terminée lorsque toutes les cartes ont été assemblées par paires
+                </li>
+                <br>
+                <img src="memory-legume/memory_detail.png" class="imageAccueil" alt="exemple-du-jeu-réussi">
+
+                <p>
+                    Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire.<br>
+                    Le jeu garde les <span> meilleurs scores.</span><br>
+                    Si vous voulez relancer une partie cliquez <span> barre d'espce.</span>
+                </p>
+
+            </ul>
+        </main>
+    </div>  
 
     
 </body>
