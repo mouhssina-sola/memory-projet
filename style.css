@@ -170,8 +170,12 @@ form {
     margin-top: 2px;
 }
 
-.blocJauge {
+.jaugeMoyenJaune, .jaugeFortVert {
     margin-left: 2vh;
+}
+
+.jaugeMoyenJaune, .jaugeFortVert, .jaugeFaibleOrange {
+visibility: hidden;
 }
 
 .inputEtCheck{
@@ -179,7 +183,7 @@ form {
     flex-direction: row;
 }
 
-.imgCheck{
+.imgError{
     width: 23px;
     margin-left: 5px;
     margin-top: 10px;

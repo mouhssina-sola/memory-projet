@@ -30,46 +30,46 @@
             <main class="mainInscription">
                 <form action="" method="" class="form">
                     <div class="form-row">
-                        <label for="nom">Nom d'utisateur : </label>
+                        <label for="nomId">Nom d'utisateur : </label>
                         <div>
                             <div class="inputEtCheck">
                                 <input type="text" name="nomId" id="nomId" class="inputForm" placeholder="3 caractère minimum" autofocus title="Renseignez un nom d'utilisateur" required pattern="[a-zA-Z0-9_-]{3,15}">
-                                <img src="error.svg" class="imgCheck" id="imgCheckId" alt="pastille-verte-valider">
+                                <img src="error.svg" class="imgError" id="imgCheckId" alt="pastille-rouge-erreur">
                             </div>
                             <p id="msgId">Choississez un pseudo avec minimum 3 caractères</p>
                         </div>
                     </div>
                     <br>
                     <div>
-                        <label for="prenom">Entrez votre email : </label>
+                        <label for="email">Entrez votre email : </label>
                         <div>
                             <div class="inputEtCheck">
                                 <input type="email" name="email" id="email" class="inputForm" placeholder="Votre email" autofocus title="Votre adresse mail">
-                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                                <img src="error.svg" class="imgError" id="imgCheckMail" alt="pastille-rouge-erreur">
                             </div>
                             <p id="msgMail">veuillez saisir une adresse mail valide</p>
                         </div>
                     </div>
                     <br>
                     <div>
-                        <label for="mdp">Entrez un mot de passe : </label>
+                        <label for="password">Entrez un mot de passe : </label>
                         <div>
                             <div class="inputEtCheck">
-                                <input type="password" name="password" id="password" class="inputForm" placeholder="Votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                                <input type="password" name="password" id="password" class="inputForm" placeholder="Votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{6,}">
+                                <img src="error.svg" class="imgError" id="imgCheckMdp" alt="pastille-rouge-erreur">
                             </div>
                             <p id="msgMdp">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum</p>
                             <!-- les jauges du mot de passe -->
                             <div class="jauges">
-                                <div>
+                                <div class="jaugeFaibleOrange" id="jaugeFaible">
                                     <div class="jaugeOrange"> </div> 
                                     <p class="jaugeFaible">Faible</p>
                                 </div>
-                                <div class="blocJauge">
+                                <div class="jaugeMoyenJaune" id="jaugeMoyen">
                                     <div class="jaugeJaune"></div> 
                                     <p class="jaugeMoyen">Moyen</p>
                                 </div>
-                                <div class="blocJauge">
+                                <div class="jaugeFortVert" id="jaugeFort">
                                     <div class="jaugeVert"></div> 
                                     <p class="jaugeFort">Fort</p>
                                 </div>
@@ -78,11 +78,11 @@
                     </div> 
                     <br>              
                     <div>
-                        <label for="mdp">Verifiez votre mot de passe : </label>
+                        <label for="passwordVerified">Verifiez votre mot de passe : </label>
                         <div>
                             <div class="inputEtCheck">
-                                <input type="password" name="password" id="passwordVerified" class="inputForm" placeholder="Confirmer votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                                <img src="error.svg" class="imgCheck" id="imgCheck" alt="pastille-verte-valider">
+                                <input type="password" name="password" id="passwordVerified" class="inputForm" placeholder="Confirmer votre mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{6,}">
+                                <img src="error.svg" class="imgError" id="imgCheckMdpVerfied" alt="pastille-rouge-erreur">
                             </div>
                             <p id="msgValidMdp">votre mot de passe ne correspond pas</p>
                         </div>
